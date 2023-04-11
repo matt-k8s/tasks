@@ -2,7 +2,7 @@
 
 ## Description
 
-Develop a tasks website which allows the user to create, read, uodate and delete tasks.
+Develop a tasks API which allows the user to create, read, update and delete tasks.
 
 
 ## Installation
@@ -15,7 +15,7 @@ Develop a tasks website which allows the user to create, read, uodate and delete
 
 - `npm run test`
 
-## Running the app
+## Running the API
 
 Start the database and cache:
 
@@ -25,14 +25,6 @@ Start the database and cache:
 Start the app: `npm run start:dev`
 
 ## Requirements
-
-- Display the data in a HTML UI
-
-- Allow the user to create new tasks via the UI
-
-- Allow the user to edit a task via the UI
-
-- Allow the user to delete a task via the UI
 
 - Use Redis for caching data
 
