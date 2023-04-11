@@ -46,82 +46,82 @@ GET /tasks - return tasks
 
 Response:
 
-```json
-{
-  errorMessage: null,
-  data: [
-    {
-      taskId: "abc123",
-      description: "Do the windows.",
-    },
-    {
-      taskId: "abc456",
-      description: "Do the shopping.",
-    },
-  ],
-}
+```
+  {
+    errorMessage: null,
+    data: [
+      {
+        taskId: "abc123",
+        description: "Do the windows.",
+      },
+      {
+        taskId: "abc456",
+        description: "Do the shopping.",
+      },
+    ],
+  }
 ```
 
 POST /tasks - create task
 
 Body:
 
-```json
-{
-  description: "Do the dishes.",
-}
+```
+  {
+    description: "Do the dishes.",
+  }
 ```
 
 Response:
 
-```json
-{
-  errorMessage: null,
-  isCached: true,
-  data: [
-    {
-      description: "Do the dishes.",
-    },
-  ],
-}
+```
+  {
+    errorMessage: null,
+    isCached: true,
+    data: [
+      {
+        description: "Do the dishes.",
+      },
+    ],
+  }
 ```
 
 PUT /tasks:taskId - update task
 
 Body:
 
-```json
-{ description: "Hoover the floor." }
+```
+  { description: "Hoover the floor." }
 ```
 
 Response:
 
-```json
-{
-  errorMessage: null,
-  isCached: true,
-  data: [
-    {
-      taskId: "1",
-      description: "Hoover the floor.",
-    },
-  ],
-}
+```
+  {
+    errorMessage: null,
+    isCached: true,
+    data: [
+      {
+        taskId: "1",
+        description: "Hoover the floor.",
+      },
+    ],
+  }
 ```
 
 DELETE /tasks:taskId - delete task
 
 Response:
 
-```json
-{
-  errorMessage: null,
-  isDeleted: true,
-  data: [
-    {
-      taskId: "1",
-      description: "Hoover the floor.",
-    },
-  ],
-}
+```
+  {
+    errorMessage: null,
+    isDeleted: true,
+    data: [
+      {
+        taskId: "1",
+        description: "Hoover the floor.",
+      },
+    ],
+  }
 ```
